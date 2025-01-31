@@ -3,14 +3,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: AucaRegular, "AucaRegular", Georgia, serif
-    color: Orange;
+    font-family: AucaRegular, "AucaRegular", Georgia, serif;
+    color: black;
     margin: 0 auto;
     width: 90%;
 }
 
 #logo {
-    font-family:AucaRegular, "AucaRegular", Georgia, serif
+    font-family:AucaRegular, "AucaRegular", Georgia, serif;
     font-size: 3em;
     color: Gold;
     text-align: center;
@@ -96,5 +96,3 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 1.2em;
-    font-weight: bold;
-    width: 100%;
