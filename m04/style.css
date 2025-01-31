@@ -1,6 +1,6 @@
-* {
-				font-family: Arial, Verdana, sans-serif;
-				color: #665544;
+{
+				font-family: Times, "Times New Roman", Georgia, serif;
+				color: Black;
 				text-align: center;}
 			body {
 				width: 90%;
@@ -19,9 +19,9 @@
 				display: inline;
 				padding: 0.5em;}
 			#nav, #footer {
-				background-color: #efefef;
+				background-color: lightblue;
 				padding: 0.5em 0;}
 			#feature, .article {
 				height: 10em;
 				margin-bottom: 1em;
-				background-color: #efefef;}
+				background-color: Lightblue;}
