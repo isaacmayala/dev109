@@ -6,11 +6,12 @@ body {
     font-family: AucaRegular, "AucaRegular", Georgia, serif;
     color: black;
     margin: 0 auto;
-    width: 90%;
+    width: 90%; /* Consider using max-width instead for better responsiveness */
+    max-width: 1200px; /* Example max-width */
 }
 
 #logo {
-    font-family:AucaRegular, "AucaRegular", Georgia, serif;
+    font-family: AucaRegular, "AucaRegular", Georgia, serif;
     font-size: 3em;
     color: Gold;
     text-align: center;
@@ -18,14 +19,13 @@ body {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-
 #nav {
     background-color: Black;
     padding: 15px;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    margin: 1%;
+    margin: 1% 0; /* Simplified margin */
 }
 
 #nav ul {
@@ -45,18 +45,18 @@ body {
 }
 
 #feature {
-    background-color: white; 
-    background-image: url("https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/BO6.jpg"); 
-    background-size: 40%; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 10em;
+    background-color: white;
+    background-image: url("https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/BO6.jpg");
+    background-size: cover; /* Changed to cover for better image scaling */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20em; /* Increased height for better visibility */
     margin-bottom: 1em;
     padding: 20px;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
     width: 100%;
 }
@@ -65,26 +65,28 @@ body {
     font-size: 4em;
     font-weight: bold;
     margin: 0;
-    color: white; 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Added text shadow for better readability */
 }
 
 #content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
-    max-width: 100%;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     padding: 1em 0;
 }
 
-
 .column1, .column2, .column3 {
-    width: 31%; 
-    height: 8em;
-    background-color: Orange; 
+    width: 31%;
+    height: 15em; /* Increased height for better content display */
+    background-color: Orange;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 1em; /* Added margin between columns for better spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
 
 .column1 { background-color: Orange; }
@@ -96,3 +98,5 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 1.2em;
+    margin-top: 1em; /* Added margin to separate from content */
+}
