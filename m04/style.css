@@ -1,27 +1,103 @@
-{
-				font-family: Times, "Times New Roman", Georgia, serif;
-				color: Black;
-				text-align: center;}
-			body {
-				width: 90%;
-				margin: 0 auto;}
-			#content {
-				overflow: auto;}
-			#nav, #feature, #footer {
-				margin: 1%;}
-			.column1, .column2, .column3 {
-				width: 31.3%;
-				float: left;
-				margin: 1%;}
-			.column3 {
-				margin-right: 0%;}
-			li {
-				display: inline;
-				padding: 0.5em;}
-			#nav, #footer {
-				background-color: lightblue;
-				padding: 0.5em 0;}
-			#feature, .article {
-				height: 10em;
-				margin-bottom: 1em;
-				background-color: Lightblue;}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN&display=swap');
+
+
+body {
+    background-image: url('https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/CallofDuty.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: AucaRegular, "AucaRegular", Georgia, serif
+    color: Orange;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#logo {
+    font-family:AucaRegular, "AucaRegular", Georgia, serif
+    font-size: 3em;
+    color: Gold;
+    text-align: center;
+    padding: 30px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+#nav {
+    background-color: Black;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1%;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#nav a {
+    color: Gold;
+    text-decoration: none;
+}
+
+#feature {
+    background-color: white; 
+    background-image: url("https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/BO6.jpg"); /* Background image */
+    background-size: 40%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 10em;
+    margin-bottom: 1em;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+}
+
+#feature p {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    color: white; 
+}
+
+#content {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap; 
+    padding: 1em 0;
+}
+
+
+.column1, .column2, .column3 {
+    width: 31%; 
+    height: 8em;
+    background-color: Orange; 
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column1 { background-color: Orange; }
+.column2 { background-color: grey; }
+.column3 { background-color: beige; }
+
+#footer {
+    background-color: Gold;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
