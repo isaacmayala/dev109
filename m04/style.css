@@ -1,13 +1,13 @@
-@import url("reset.css");
+/* style.css */
 
 body {
-  font-family: AucaRegular, "AucaRegular", Georgia, serif;
-  color: black;
-  background-position: center;
-  background-size: cover;
-  background-image: url('https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/CallofDuty.jpg');
-  margin: 0 auto;
-  width: 90%;
+    font-family: AucaRegular, "AucaRegular", Georgia, serif;
+    color: black;
+    background-image: url('https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/CallofDuty.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 90%;
 }
 
 #logo {
@@ -16,35 +16,30 @@ body {
     color: Gold;
     text-align: center;
     padding: 30px 0;
-    
 }
 
-			 
-#content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 1em 0;
-}
-
-
-#nav {
-  margin: 1%; 
-background-color: black;
+nav#nav { /* More specific selector for the nav */
+    background-color: black;
     padding: 15px;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-  }
+}
 
-#feature   {
-    background-color: white;
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+
+#feature {
     background-image: url("https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m04/BO6.jpg");
-    background-size: cover; /* Changed to cover for better image scaling */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 20em; /* Increased height for better visibility */
+    height: 20em;
     margin-bottom: 1em;
     padding: 20px;
     display: flex;
@@ -55,47 +50,46 @@ background-color: black;
 }
 
 .column1, .column2, .column3 {
-width: 31.3%;
-    height: 15em; /* Increased height for better content display */
+    width: 31.3%;
+    height: 15em;
     background-color: Orange;
     text-align: center;
-    margin-bottom: 1em; /* Added margin between columns for better spacing */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 1em;
+    box-sizing: border-box;
 }
-
 
 .column1 { background-color: Orange; }
 .column2 { background-color: grey; }
 .column3 { background-color: beige; }
 
-
-ul {
+nav ul { /* More specific selector for the ul in the nav */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
- li {
+nav li { /* More specific selector for the li in the nav */
     display: inline;
     margin: 0 15px;
 }
 
-a {
+nav a { /* More specific selector for the a in the nav */
     color: Gold;
-    }
+    text-decoration: none; /* added to remove underlines from links */
+}
 
 #footer {
-	background-color: Gold;
+    background-color: Gold;
     text-align: center;
     padding: 20px;
     font-size: 1.2em;
-margin-top: 1em; /* Added margin to separate from content */}
+    margin-top: 1em;
+}
 
-	#feature p { 
+#feature p {
     font-size: 4em;
     font-weight: bold;
     margin: 0;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Added text shadow for better readability */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
-	
