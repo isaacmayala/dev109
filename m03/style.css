@@ -1,3 +1,4 @@
+/* style.css */
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #665544;
@@ -7,12 +8,12 @@ body {
 h1 {
     text-align: center;
     color: blue;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Corrected font-family name */
     font-size: 400%;
 }
 
 p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Corrected font-family name */
     font-weight: normal;
     font-style: normal;
     font-size: 200%;
