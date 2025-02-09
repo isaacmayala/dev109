@@ -1,1 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Wellfleet');
 
+body {
+    background-color: #e1ad01;
+    color: white;
+    font-family: 'Wellfleet', serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background: url('https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m05/Bullseye%20logo.png') no-repeat center;
+    background-size: contain;
+    height: 120px;
+    text-indent: -9999px;
+}
+
+#blackboard {
+    background-color: #2e4a32;
+    border: 25px solid #523620;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    position: relative; /* Needed for absolute positioning of #teacher */
+}
+
+#teacher {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translate(50px, 0);
+    width: 220px;
+    height: auto;
+}
+
+#teacher img {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+}
+
+/* Added to make sure the table is visible even if it's long */
+#table {
+    overflow-x: auto; /* Horizontal scrollbar if needed */
+}
