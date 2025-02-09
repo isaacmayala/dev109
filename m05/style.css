@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Wellfleet');
+
 body {
     background-color: #e1ad01;
     color: white;
@@ -9,10 +10,10 @@ body {
 }
 
 h1 {
-    background: url('https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/m05/Bullseye%20logo.png') no-repeat center;
+    background: url('https://raw.githubusercontent.com/isaacmayala/dev109/main/m05/Bullseye%20logo.png') no-repeat center;
     background-size: contain;
     height: 120px;
-    text-indent: -9999px;
+    text-indent: -9999px; /* Hides the actual text of the h1 */
 }
 
 #blackboard {
@@ -20,7 +21,7 @@ h1 {
     border: 25px solid #523620;
     border-radius: 20px;
     padding: 20px;
-    margin: auto;
+    margin: 0 auto; /* Centers the blackboard horizontally */
     width: 300px;
     text-align: center;
     font-size: 20px;
@@ -31,7 +32,7 @@ h1 {
     position: absolute;
     left: 70%;
     top: 40%;
-    transform: translate(50px, 0);
+    transform: translate(-50%, 0); /* Corrected transform for centering */
     width: 220px;
     height: auto;
 }
@@ -41,23 +42,27 @@ h1 {
     height: auto;
 }
 
-table {
+/*  Table Styles */
+#table { /* Use #table to style the table container */
     width: 100%;
-    border-collapse: collapse;
+    overflow-x: auto; /* Horizontal scrollbar if needed */
     margin-top: 20px;
 }
 
-th, td {
+#table table { /* Style the actual <table> element */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table th, #table td { /* Style table cells within the #table container */
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
 }
 
-th {
+#table th { /* Style table headers within the #table container */
     background-color: #eee;
+    color: black; /* Added to improve contrast */
 }
 
 /* Added to make sure the table is visible even if it's long */
-#table {
-    overflow-x: auto; /* Horizontal scrollbar if needed */
-}
