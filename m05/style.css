@@ -32,7 +32,7 @@ h1 {
     position: absolute;
     left: 70%;
     top: 40%;
-    transform: translate(-50%, 0); /* Corrected transform for centering */
+    transform: translate(50%, 0); /* Corrected transform for centering */
     width: 220px;
     height: auto;
 }
