@@ -1,3 +1,4 @@
+/* css/style.css */
 @import url('https://fonts.googleapis.com/css?family=Wellfleet');
 
 body {
@@ -10,7 +11,8 @@ body {
 }
 
 h1 {
-    background: url('https://raw.githubusercontent.com/isaacmayala/dev109/main/m05/Bullseye%20logo.png') no-repeat center;
+        background: url('https://raw.githubusercontent.com/isaacmayala/dev109/main/m05/Bullseye%20logo.png') no-repeat center;
+
     background-size: contain;
     height: 120px;
     text-indent: -9999px; /* Hides the actual text of the h1 */
@@ -42,7 +44,7 @@ h1 {
     height: auto;
 }
 
-/*  Table Styles */
+/* Table Styles */
 #table { /* Use #table to style the table container */
     width: 100%;
     overflow-x: auto; /* Horizontal scrollbar if needed */
