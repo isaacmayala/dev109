@@ -1,3 +1,4 @@
+// js/script.js
 // Prompt user for a number and convert it to a valid number
 let num = prompt("Enter a number (0-10):", "5");
 num = Number(num);
