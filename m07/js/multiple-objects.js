@@ -23,8 +23,3 @@ document.getElementById('hotel1').textContent = quayHotel.getDetails();
 document.getElementById('hotel2').textContent = parkHotel.getDetails();
 document.getElementById('hotel3').textContent = sunsetHotel.getDetails(); // Display Sunset Hotel
 
-
-/*
-NOTE: textContent does not work in IE8 or earlier.
-You can use innerHTML, but be mindful of security issues (see p228-231 of the book).
-*/
