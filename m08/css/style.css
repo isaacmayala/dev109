@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
-    font-family: sans-serif;
+     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -17,8 +17,6 @@ body {
     width: 300px;
     text-align: center;
 }
-
-
 
 h1, h2 {
     margin: 10px 0;
