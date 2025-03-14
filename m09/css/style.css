@@ -1,1 +1,18 @@
-
+body {
+    height: 500px; /* Increased height for more drawing space */
+    background: beige;
+    position: relative; /* Needed for absolute positioning of dots */
+  }
+  .dot {
+    position: absolute;
+    border-radius: 50%; /* Make dots circular */
+  }
+  #controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 100; /* Ensure controls are on top */
+  }
