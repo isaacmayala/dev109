@@ -7,13 +7,16 @@
     <link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
-<div id="controls">
-  <label for="colorPicker">Color:</label>
-  <input type="color" id="colorPicker" value="#0000FF">
-  <label for="sizeSlider">Size:</label>
-  <input type="range" id="sizeSlider" min="4" max="20" value="8">
-  <button id="clearButton">Clear</button>
-</div>
+<div class="controls">
+    <button id="clearButton">Clear All</button>
+    <label for="colorPicker">Color:</label>
+    <input type="color" id="colorPicker" value="#0000FF">
+    <label for="sizeSlider">Size:</label>
+    <input type="range" id="sizeSlider" class="size-slider" min="2" max="50" value="8">
+    <span id="sizeValue">8px</span>
+  </div>
+  
+  <div class="drawing-area" id="drawingArea"></div>
 <script src="js/script.js"></script>
 </body>
 </html>
