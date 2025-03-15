@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Mount Fuji: Japan's highest peak and most iconic landmark standing at 3,776 meters. This active volcano is known for its perfectly symmetrical cone shape and is often depicted with a snow capped peak. It's considered one of Japan's three sacred mountains and has been a pilgrimage site for centuries.'
         },
         {
-            src: 'image/image2.jpg',
+            src: 'image/image2.jpeg',
             alt: 'Aerial view of Mexico City showing the dense urban landscape and surrounding mountains',
             description: 'Mexico City: The capital of Mexico and one of the most populous cities in the world. Built on the ruins of the ancient Aztec city of Tenochtitlan, it features a unique blend of modern skyscrapers, colonial architecture, and pre-Hispanic ruins. The city is surrounded by mountains and volcanoes creating its distinctive basin location.'
         },
