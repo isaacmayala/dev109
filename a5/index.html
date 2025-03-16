@@ -8,32 +8,42 @@
         
     </style>
 </head>
-<body>
-    <div class="container">
-        <div id="timer" class="timer">0</div>
+<h1>A5 - Carousel</h1>
+    
+    <div id="timer">Time: 0s</div>
+    
+    <div class="carousel-container">
+        <img src="https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/a5/image/image1.jpg" alt="Japan." class="carousel-image active" id="img1">
         
-        <div class="carousel-container">
-            <div class="carousel">
-                <img id="carousel-image" src="image/image1.jpg" alt="Beautiful view of Mount Fuji in Japan with clear skies and snow-capped peak" class="carousel-img">
-                <div id="image-description" class="description">
-                    Mount Fuji: Japan's highest peak and most iconic landmark standing at 3,776 meters. This active volcano is known for its perfectly symmetrical cone shape and is often depicted with a snow capped peak. It's considered one of Japan's three sacred mountains and has been a pilgrimage site for centuries.
-                </div>
-                <div class="controls">
-                    <button id="prev-btn" class="control-btn">Previous</button>
-                    <button id="next-btn" class="control-btn">Next</button>
-                </div>
-            </div>
+        <img src="https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/a5/image/image2.jpeg" alt="Mexico." class="carousel-image" id="img2">
+        
+        <img src="https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/a5/image/image3.jpg" alt="Cape Town." class="carousel-image" id="img3">
+        
+        <img src="https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/a5/image/image4.jpg" alt="France." class="carousel-image" id="img4">
+
+        
+        <img src="https://raw.githubusercontent.com/isaacmayala/dev109/refs/heads/main/a5/image/image5.jpg" alt="Australia." class="carousel-image" id="img4">
+        
+        <div class="description-box" id="description">
+            The beautiful landscape of the best cites.
         </div>
         
-        <div class="validators">
-            <a href="https://validator.w3.org/nu/?doc=https://yourwebsite.com/a5/index.html" target="_blank">
-                <img src="img/html-validator.png" alt="HTML Validator" class="validator-icon">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://yourwebsite.com/a5/styles.css" target="_blank">
-                <img src="img/css-validator.png" alt="CSS Validator" class="validator-icon">
-            </a>
+        <div class="button-container">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
         </div>
     </div>
+    
+    <!-- Validator Icons -->
+    <div class="validator-icons">
+      <a href="https://validator.w3.org/check?uri=referer">
+        <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML" />
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS" />
+      </a>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
