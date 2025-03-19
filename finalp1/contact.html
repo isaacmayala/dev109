@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="Tue, 18 March 2025 20:58:57 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-   <title>Contact Me</title>
-   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+  <meta name="dcterms.created" content="Tue, 18 March 2025 20:58:57 GMT">
+  <meta name="description" content="Contact form for Isaac Mayala's personal website">
+  <meta name="keywords" content="contact, isaac mayala, rugby, web development">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
     <header>
         <nav>
@@ -29,19 +30,27 @@
     </header>
     <main>
         <h1>Contact Me</h1>
-        <form action="thankyou.html" method="get">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment"></textarea> <br>
-            <input type="submit" value="Submit">
+        <form action="thankyou.html" method="get" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </main>
     <footer>
         <p>&copy; 2025 Isaac Mayala | <a href="https://validator.w3.org/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
     </footer>
-   <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
