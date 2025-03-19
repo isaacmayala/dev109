@@ -13,7 +13,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: overlay; /* This will blend the color with the image */
-    color: white; /* Makes text readable against darker background */
+    color: black; /* Makes text readable against darker background */
 }
 
 header {
