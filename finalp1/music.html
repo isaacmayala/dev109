@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="Tue, 18 March 2025 20:58:57 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-<title>Music</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+<header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="artifacts.html">Artifacts</a></li>
@@ -24,18 +11,63 @@
         <li><a href="validated.html">Validated</a></li>
         <li><a href="music.html">Music</a></li>
         <li><a href="animation.html">Animation</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Music Page</h1>
-        <audio controls>
-            <source src="images/music.mp3" type="audio/mpeg">
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>My Music Collection</h1>
+    <p>Welcome to my music page! Here you can find some of my favorite songs and artists. Music has always been an important part of my life, helping me through study sessions and inspiring creativity.</p>
+    
+    <div class="music-container">
+      <div class="album">
+        <img src="images/madcon-beggin.jpg" alt="Madcon - Beggin' Album Cover">
+        <div class="album-info">
+          <h2 class="album-title">Beggin'</h2>
+          <h3 class="album-artist">Madcon</h3>
+          <p class="album-description">Released in 2007, "Beggin'" is a remake of the 1967 Four Seasons hit. The Norwegian hip hop duo Madcon gave this classic a modern twist with their energetic rhythm and unique style. The song became a huge international hit, reaching the top 10 in multiple countries.</p>
+          <audio controls>
+            <source src="images/madcon-beggin.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-        </audio>
-        </main>
-    <footer>
-        <p>&copy; 2025 Isaac Mayala | <a href="https://validator.w3.org/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
-    </footer>
+          </audio>
+        </div>
+        
+        <div class="playlist">
+          <h2>My Playlist</h2>
+          <div class="playlist-item">
+            <span>1. Beggin' - Madcon</span>
+            <span>3:37</span>
+          </div>
+          <div class="playlist-item">
+            <span>2. Glow - Madcon</span>
+            <span>3:22</span>
+          </div>
+          <div class="playlist-item">
+            <span>3. Freaky Like Me - Madcon</span>
+            <span>3:06</span>
+          </div>
+          <div class="playlist-item">
+            <span>4. Liar - Madcon</span>
+            <span>3:45</span>
+          </div>
+          <div class="playlist-item">
+            <span>5. Back On The Road - Madcon</span>
+            <span>3:12</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="album">
+        <h2>Add Your Own Music</h2>
+        <p>Share your favorite songs by uploading an MP3 file:</p>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <input type="file" name="audiofile" accept="audio/*">
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Isaac Mayala | <a href="https://validator.w3.org/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
+  </footer>
 </body>
 </html>
