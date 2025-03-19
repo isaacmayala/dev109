@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #2c5e4a; /* Nice green that complements rugby field */
@@ -15,54 +16,55 @@ body {
     color: white; /* Makes text readable against darker background */
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white for content */
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1200px;
-    color: #333; /* Dark text for readability */
-}
-
 header {
-    background-color: rgba(50, 50, 50, 0.9);
-    color: white;
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     text-align: center;
 }
 
 nav ul {
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
-    padding: 0;
-    display: inline-block;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 5px 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    color: #007bff;
+     background-color: #2c5e4a; /* Matching the body background */
+    color: white;
 }
 
 main {
-    padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
     margin: 20px auto;
-    max-width: 1000px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #333; /* Dark text for readability */
 }
 
 h1, h2 {
-    color: #007bff;
+    color: #2c5e4a;
+    margin-bottom: 15px;
 }
 
 .project-item {
@@ -80,8 +82,9 @@ h1, h2 {
 }
 
 form label {
-    display: block;
-    margin-top: 10px;
+     display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input, form textarea {
@@ -104,14 +107,40 @@ form button {
 }
 
 footer {
+     background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    background-color: rgba(50, 50, 50, 0.9);
-    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #2c5e4a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e412f;
+}
+
 .validation-columns {
     display: flex;
     justify-content: space-around;
+    grid-template-columns: 1fr;
 }
 
 .validation-column {
@@ -124,6 +153,58 @@ footer {
     display: block;
     margin: 10px auto;
 }
+
+/* Artifacts page */
+.artifacts-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.artifacts-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.artifacts-container a {
+    display: inline-block;
+    background-color: #2c5e4a;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.artifacts-container a:hover {
+    background-color: #1e412f;
+}
+
+/* Project items (courses page) */
+.project-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h2 {
+    border-bottom: 1px solid #2c5e4a;
+    padding-bottom: 5px;
+}
+
+.project-item a {
+    color: #2c5e4a;
+    font-weight: bold;
+}
+
+/* Music page */
 .music-container {
       display: flex;
       flex-direction: column;
