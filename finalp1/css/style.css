@@ -112,3 +112,70 @@ footer {
     display: block;
     margin: 10px auto;
 }
+.music-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+    
+    .album {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    .album img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .album-info {
+      width: 100%;
+    }
+    
+    .album-title {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    
+    .album-artist {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .album-description {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    audio {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    .playlist {
+      width: 100%;
+      margin-top: 30px;
+    }
+    
+    .playlist h2 {
+      margin-bottom: 15px;
+    }
+    
+    .playlist-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .playlist-item:nth-child(odd) {
+      background-color: #f9f9f9;
